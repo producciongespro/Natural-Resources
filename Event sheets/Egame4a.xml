@@ -266,5 +266,25 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="575286676019085" title="Setup Game">
+            <sub-events>
+                <comment>Reseteo de variables cuando carga la pantalla</comment>
+                <event-block sid="265122199594138">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="667728565528431" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="862082951785311" type="System">
+                            <param id="0" name="Variable">completados</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="959571760680085" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
